@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Favorite Teams</title>
+  <style>
+    body{ 
+      background:#d6e5d1; 
+      font-family:Arial, sans-serif; 
+      margin:0; 
+      padding:0; 
+    }
+    .header img{ 
+      width:100%; 
+      height:200px; 
+      object-fit:cover; 
+      display:block; 
+    }
+    /* Sticky Navbar */
+    nav {
+      position: sticky;
+      top: 0;
+      background-color: #405173; /* blue */
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      padding: 14px 0;
+      z-index: 1000;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 18px;
+      transition: color 0.2s;
+    }
+
+    nav a:hover,
+    nav a.active {
+      color: #BFAD75; /* gold hover / active */
+    }
+    .team-section{ 
+      margin-bottom:40px; 
+      text-align:center; 
+    }
+    .team-section img{ 
+      max-width:450px; 
+      border-radius:12px; 
+      margin-bottom:15px; 
+      box-shadow:0 4px 10px rgba(0,0,0,0.3); 
+      border:3px solid #fff; 
+    }
+    .team-text{ 
+      background:#3A6B35; 
+      color:#fff; 
+      border-radius:12px; 
+      padding:25px; 
+      max-width:600px; 
+      margin:0 auto; 
+      box-shadow:0 4px 12px rgba(0,0,0,0.25); 
+    }
+    .team-text h2{ 
+      margin-top:0; 
+      color:#F5D76E; 
+    }
+  </style>
+</head>
+<body class="teams-page">
+
+  <div class="header">
+    <img src="arkinheader.png" alt="Arkin Magazine Banner">
+  </div>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About Me</a>
+    <a href="volleyball.html">Volleyball</a>
+    <a href="teams.html">Fav Teams</a>
+    <a href="player.html">Fav Player</a>
+  </nav>
+
+  <div class="team-section">
+    <img src="favteamjapan.jpg" alt="Japan Volleyball Team">
+    <div class="team-text">
+      <h2>Japan National Volleyball Team</h2>
+      <p>Japan plays so fast, and they’re crazy good at saving the ball. 
+        Yūki Ishikawa is my favorite to watch because he always comes through in those clutch moments. 
+        I’ll never forget when they beat Brazil in the 2021 Tokyo Olympics; it showed me how smart gameplay can beat pure strength.</p>
+    </div>
+  </div>
+
+  <div class="team-section">
+    <img src="favteamph.jpg" alt="Philippines Volleyball Team">
+    <div class="team-text green-box">
+      <h2>Philippines National Volleyball Team</h2>
+      <p>The Philippines team plays with so much hype. 
+        Their win against Egypt in the 2025 Men’s World Championship made me proud because it was our first-ever win on the men’s world stage, and it happened right here at home.</p>
+    </div>
+  </div>
+
+  <div class="team-section">
+    <img src="favteambrazil.jpeg" alt="Brazil Volleyball Team">
+    <div class="team-text">
+      <h2>Brazil National Volleyball Team</h2>
+      <p>Brazil has been one of the strongest teams ever. 
+        Their comeback in the 2016 Rio Olympics final, when they won gold at home, was so insane. 
+        That’s why they’ll always be seen as one of the greatest teams ever in my eyes.</p>
+    </div>
+  </div>
+
+</body>
+</html>

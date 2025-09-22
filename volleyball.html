@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Volleyball</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body { 
+      background:#B8CDE0; 
+      font-family:Arial, sans-serif; 
+      margin:0; 
+      padding:0; 
+    }
+    .header img{ 
+      width:100%; 
+      height:200px; 
+      object-fit:cover; 
+      display:block; 
+    }
+    /* Sticky Navbar */
+nav {
+  position: sticky;
+  top: 0;
+  background-color: #405173; /* blue */
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 14px 0;
+  z-index: 1000;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+  transition: color 0.2s;
+}
+
+nav a:hover,
+nav a.active {
+  color: #BFAD75; /* gold hover / active */
+}
+    .page-container{ 
+      max-width:1000px; 
+      margin:40px auto; 
+      padding:0 20px; 
+    }
+    .vb-section{ 
+      display:flex; 
+      align-items:center; 
+      justify-content:space-between; 
+      background:#405173; 
+      color:#fff; 
+      padding:30px; 
+      border-radius:12px; 
+      margin-bottom:30px; 
+      gap:20px; 
+      box-shadow:0 4px 12px rgba(0,0,0,0.2); 
+    }
+    .vb-section.gold{ 
+      background:#F5C542; color:#fff; 
+    }
+    .vb-text{ 
+      flex:1; 
+    }
+    .vb-photo{ 
+      flex:1; 
+      display:flex; 
+      justify-content:center; 
+    }
+    .vb-photo img{ 
+      max-width:100%; 
+      border-radius:12px; 
+      object-fit:cover; 
+      box-shadow:0 4px 10px rgba(0,0,0,0.25); 
+    }
+    h1,h2,h3{ 
+      margin:0 0 10px 0; 
+    }
+    .vb-text p{ 
+      font-size:16px; 
+      line-height:1.5; 
+    }
+  </style>
+</head>
+<body class="volleyball-page">
+
+  <div class="header">
+    <img src="arkinheader.png" alt="Banner">
+  </div>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About Me</a>
+    <a href="volleyball.html">Volleyball</a>
+    <a href="teams.html">Fav Teams</a>
+    <a href="player.html">Fav Player</a>
+  </nav>
+
+  <div class="page-container volleyball-page">
+    <div class="vb-section blue">
+      <div class="vb-text">
+        <h1>Why I Love Volleyball</h1>
+        <p>
+          Volleyball is my favorite sport because it’s fun and gives me a rush of adrenaline. 
+          At training, it improves how I play and what I decide to do next. 
+          As for the actual matches, I love playing and watching practice matches until 6 pm. 
+          I love the feeling of a clean spike or a long rally, especially when everyone is locked in on scoring your team's point.
+        </p>
+      </div>
+      <div class="vb-photo">
+        <img src="arkinvb.jpg" alt="Playing Volleyball">
+      </div>
+    </div>
+
+    <div class="vb-section gold">
+      <div class="vb-photo">
+        <img src="vbrules.png" alt="Volleyball Rules">
+      </div>
+      <div class="vb-text">
+        <h2>Rules & Mechanics</h2>
+        <h3>Rules</h3>
+        <ul>
+          <li>6 players per team, rotating clockwise after each serve won.</li>
+          <li>Each team can hit the ball up to 3 times before sending it back.</li>
+          <li>The ball must stay within court lines to be valid.</li>
+          <li>Points are scored when the ball lands on the opponent’s court or they commit an error.</li>
+          <li>Violations include touching the net, double contact, or stepping over the line during serve.</li>
+        </ul>
+
+        <h3>Mechanics</h3>
+        <ul>
+          <li>Play begins with a serve from behind the end line.</li>
+          <li>Teams rally until one side fails to return the ball properly.</li>
+          <li>Main sequence: bump → set → spike.</li>
+          <li>Rotation ensures each player serves and covers front and back row positions.</li>
+          <li>Specialized roles: setter, libero, blockers, and hitters.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Homepage</title>
+  <style>
+    /* --- Global / Header / Nav --- */
+    body {
+      background-color: #F0E9D2;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    .header img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      display: block;
+      margin: 0 auto;
+    }
+    nav {
+      position: sticky;
+      top: 0;
+      background-color: #405173;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      padding: 14px 0;
+      z-index: 1000;
+    }
+    nav a { 
+      color:#fff; 
+      text-decoration:none; 
+      font-weight:bold; 
+      font-size:18px; 
+    }
+    nav a:hover { 
+      color:#BFAD75; 
+    }
+
+    /* --- Grid / Boxes --- */
+    .container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      max-width: 1200px;
+      margin: auto;
+      padding: 20px;
+    }
+    .box {
+      border-radius: 12px;
+      padding: 20px;
+      color: #fff;
+      font-weight: bold;
+      font-size: 22px;
+      text-decoration: none;
+      display: flex;
+      flex-direction: column;
+      transition: transform 0.2s ease;
+      background-color: #405173;
+      box-sizing: border-box;
+    }
+    .box:hover { transform: scale(1.02); }
+
+    /* specific boxes */
+    .big {
+      grid-column: span 2;
+      grid-row: span 2;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      background-color: #8C764D;
+    }
+    .big .text { flex:1; padding-right:20px; }
+    .big .photo { flex:0.8; }
+    .big .photo img { width:100%; height:100%; border-radius:12px; object-fit:cover; }
+
+    .tall {
+      grid-row: span 2;
+      display:flex;
+      flex-direction:column;
+      justify-content:space-between;
+      background-color:#405173;
+    }
+    .tall .photo img { width:100%; border-radius:12px; object-fit:cover; }
+
+    .medium {
+      display:flex;
+      flex-direction:column;
+      background-color:#3A6B35;
+      border-radius:12px;
+      padding:20px;
+      box-sizing:border-box;
+      height:300px;
+      overflow:hidden;
+    }
+    .medium .text { 
+      flex:0 0 auto; 
+    }
+    .medium .photo { 
+      flex:1; 
+      border-radius:12px; 
+      overflow:hidden; 
+    }
+    .medium .photo img { 
+      width:100%; 
+      height:100%; 
+      object-fit:cover; 
+      border-radius:12px; 
+    }
+
+    .medium2 {
+      grid-column: span 2;
+      height:300px;
+      display:flex;
+      flex-direction:row;
+      align-items:center;
+      justify-content:space-between;
+      background-color:#f5d46b; /* blue theme for fav player box */
+      border-radius:12px;
+      padding:20px;
+      gap:20px;
+      box-sizing:border-box;
+      overflow:hidden;
+    }
+    .medium2 .text { 
+      flex:1; 
+      color:#fff; 
+      display:flex; 
+      flex-direction:column; 
+      justify-content:center; 
+    }
+    .medium2 .photo { 
+      flex:0 0 40%; 
+      height:100%; 
+      border-radius:12px; 
+      overflow:hidden; 
+    }
+    .medium2 .photo img { 
+      width:100%; 
+      height:100%; 
+      object-fit:cover; 
+      border-radius:12px; 
+    }
+
+    .box h2 { 
+      margin:0 0 10px; 
+    }
+    .box p { 
+      font-size:14px; 
+      font-weight:normal; 
+      line-height:1.4; 
+      margin:0; 
+      color:#fff; 
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Banner -->
+  <div class="header">
+    <img src="arkinheader.png" alt="Arkin Magazine Banner">
+  </div>
+
+  <!-- Sticky Taskbar -->
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About Me</a>
+    <a href="volleyball.html">Volleyball</a>
+    <a href="teams.html">Fav Teams</a>
+    <a href="player.html">Fav Player</a>
+  </nav>
+
+  <!-- Boxes -->
+  <div class="container">
+    <!-- About Me -->
+    <a href="about.html" class="box big">
+      <div class="text">
+        <h2>About Me</h2>
+        <p>Learn more about me and my interests in life!</p>
+      </div>
+      <div class="photo">
+        <img src="arkinselfie.jpg" alt="About Me Photo">
+      </div>
+    </a>
+
+    <!-- Volleyball -->
+    <a href="volleyball.html" class="box tall">
+      <div class="text">
+        <h2>Volleyball</h2>
+        <p>Why volleyball is my favorite sport and the reason I love playing it.</p>
+      </div>
+      <div class="photo">
+        <img src="arkinvb.jpg" alt="Volleyball Photo">
+      </div>
+    </a>
+    
+    <a href="teams.html" class="box medium">
+      <div class="text">
+        <h2>Favorite Teams</h2>
+        <p>A look at the national teams I admire the most.</p>
+      </div>
+      <div class="photo">
+        <img src="favteamvb.jpg" alt="Teams Photo">
+      </div>
+    </a>
+
+    <a href="player.html" class="box medium2">
+      <div class="text">
+        <h2>Favorite Player</h2>
+        <p>The player who motivates me the most and pushes me to improve.</p>
+      </div>
+      <div class="photo">
+        <img src="angpaovb.png" alt="Favorite Player Photo">
+      </div>
+    </a>
+  </div>
+
+</body>
+</html>

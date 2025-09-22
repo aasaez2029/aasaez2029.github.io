@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Fav Player</title>
+  <style>
+    body{ 
+      font-family:Arial, sans-serif; 
+      margin:0; 
+      padding:0; 
+      background:#F0E9D2; 
+    }
+    .header img{ 
+      width:100%; 
+      height:200px; 
+      object-fit:cover; 
+      display:block; 
+    }
+    nav {
+      position: sticky;
+      top: 0;
+      background-color: #405173; /* blue */
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      padding: 14px 0;
+      z-index: 1000;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 18px;
+      transition: color 0.2s;
+    }
+
+    nav a:hover,
+    nav a.active {
+      color: #BFAD75; /* gold hover / active */
+    }
+    .fav-player{
+      display:flex; 
+      justify-content:space-between; 
+      align-items:center;
+      padding:40px; 
+      background-color:#fbe7a1; 
+      min-height:400px; gap:40px; 
+      border-radius:12px;
+      max-width:1100px; 
+      margin:40px auto;
+    }
+    .fav-player .text{ 
+      flex:1; 
+      color:#1a2a4f; 
+    }
+    .fav-player .text h1{ 
+      margin:0 0 20px; 
+      font-size:36px; 
+      color:#264e86; 
+    }
+    .fav-player .text p{ 
+      font-size:18px; 
+      line-height:1.6; 
+      margin:0; 
+      color:#1a2a4f; 
+    }
+    .fav-player .photo-box{
+      flex:0 0 45%; 
+      height:350px; 
+      border-radius:16px; 
+      overflow:hidden; 
+      background:#fff;
+      border:4px solid #264e86; 
+      box-shadow:0 6px 16px rgba(0,0,0,0.2);
+    }
+    .fav-player .photo-box img{ 
+      width:100%; height:100%; 
+      object-fit:cover; 
+      display:block; 
+    }
+    @media (max-width:900px){
+      .fav-player{ 
+        flex-direction:column; 
+        padding:20px; }
+      .fav-player .photo-box{ 
+        width:100%; 
+        flex:0 0 auto; 
+        height:300px; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    <img src="arkinheader.png" alt="Arkin Magazine Banner">
+  </div>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About Me</a>
+    <a href="volleyball.html">Volleyball</a>
+    <a href="teams.html">Fav Teams</a>
+    <a href="player.html" class="active">Fav Player</a>
+  </nav>
+
+  <div class="fav-player">
+    <div class="text">
+      <h1>Favorite Player</h1>
+      <p>
+        My favorite player is <strong>Alezandra Faith G. Angpao</strong>, my goat in volleyball.
+        She’s actually one of the main reasons I decided to join the volleyball club. I really enjoy peppering with her in practice.
+        But when we play together, her sets make it so much easier that I don't even have to adjust my approach. I'm an opposite hitter, 
+        but watching how consistent and dedicated she is inspires me to push myself harder and try to be the best on the court.
+      </p>
+    </div>
+    <div class="photo-box">
+      <img src="alezandraangpao.png" alt="Favorite Player">
+    </div>
+  </div>
+
+</body>
+</html>
