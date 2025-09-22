@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>About Me</title>
+  <style>
+    body {
+      background-color:#D1C3A7;
+      font-family:Arial, sans-serif; 
+      margin:0; padding:0; 
+    }
+    .header img { 
+      width:100%; 
+      height:200px; 
+      object-fit:cover; 
+      display:block; 
+      margin:0 auto; 
+    }
+    /* Sticky Navbar */
+    nav {
+      position: sticky;
+      top: 0;
+      background-color: #405173; /* blue */
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      padding: 14px 0;
+      z-index: 1000;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 18px;
+      transition: color 0.2s;
+    }
+
+    nav a:hover,
+    nav a.active {
+      color: #BFAD75; /* gold hover / active */
+    }
+    .page-container { 
+      max-width:800px; 
+      margin:40px auto; 
+      padding:0 20px; 
+      display:flex; 
+      flex-direction:column; 
+      gap:20px; 
+    }
+    .content-box { 
+      background:#8C764D; 
+      color:#fff; 
+      padding:20px; 
+      border-radius:12px; 
+      box-shadow:0 4px 8px rgba(0,0,0,0.2); 
+      position:relative; 
+    }
+    .floating-photo { 
+      position:absolute; 
+      top:-30px; 
+      right:30px; 
+    }
+    .floating-photo img { 
+      width:120px; 
+      height:120px; 
+      object-fit:cover; 
+      border-radius:50%; 
+      border:4px solid #D1C3A7; 
+      box-shadow:0 4px 10px rgba(0,0,0,0.25); 
+    }
+    .ref-box { 
+      background:#5C4B2E; 
+      color:#fff; 
+      border-radius:12px; 
+      padding:20px; 
+      font-size:15px; 
+      box-shadow:0 4px 12px rgba(0,0,0,0.2); 
+    }
+    .ref-box a { 
+      color:#D1C3A7; 
+      text-decoration:underline; 
+    }
+  </style>
+</head>
+<body class="about-page">
+
+  <div class="header">
+    <img src="arkinheader.png" alt="Arkin Magazine Banner">
+  </div>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About Me</a>
+    <a href="volleyball.html">Volleyball</a>
+    <a href="teams.html">Fav Teams</a>
+    <a href="player.html">Fav Player</a>
+  </nav>
+
+  <div class="page-container">
+    <div class="content-box info-box">
+      <div class="floating-photo">
+        <img src="arkinselfie.jpg" alt="About Me Photo">
+      </div>
+
+      <div class="text">
+        <h1>About Me</h1>
+        <p>
+          Hi! I’m Arkin Lexis, I’m 15 years old, and I’m from Baler, Aurora. 
+          I enjoy spending time on the things I’m passionate about, whether that’s school, hobbies, or just hanging out. 
+          Volleyball is a big part of my life, but I also like relaxing and playing online games. 
+          I try to balance studying and how I spend my free time on the weekends.
+        </p>
+      </div>
+    </div>
+
+    <div class="content-box ref-box">
+  <h2>Photo References</h2>
+  <ul>
+    <li><strong>Banner Image</strong> — Arkin Magazine Banner, uploaded on 
+      <a href="https://i.imgur.com/FCpwDVM.png" target="_blank">Imgur</a>
+    </li>
+    <li><strong>About Me Photo</strong> — Portrait photo, uploaded on 
+      <a href="https://i.imgur.com/Nj3V7tP.jpeg" target="_blank">Imgur</a>
+    </li>
+    <li><strong>Volleyball Photo</strong> — Volleyball Jersey, uploaded on 
+      <a href="https://i.imgur.com/RsUy55O.jpeg" target="_blank">Imgur</a>
+    </li>
+    <li><strong>Fav Teams Photo</strong> — Japan men's volleyball, uploaded on 
+      <a href="https://images.volleyballworld.com/image/upload/t_editorial_landscape_12_desktop/v1719519033/fivb-prd/wjkdxcjroqj0zeyib7qd.jpg" target="_blank">Imgur</a>
+    </li>
+    <li><strong>Fav Player Photo</strong> — Alezandra Faith G. Angpao, uploaded on
+      <a href="https://i.imgur.com/NZfnpAk.png" target="_blank">Imgur</a>
+    </li>
+    <li><strong>Volleyball Rules</strong> — Volleyball rules, uploaded on
+      <a href="https://i.imgur.com/b9wKiSu.png" target="_blank">Imgur</a>
+    </li>
+    <li><strong>Favorite Teams (Japan)</strong> — Japan men’s volleyball team match, 
+      <a href="https://1cms-img.imgix.net/17sepran1.jpg" target="_blank">VolleyballWorld (FIVB)</a>
+    </li>
+    <li><strong>Favorite Teams (Philippines)</strong> — Alas Pilipinas at 2025 World Championship, 
+      <a href="https://1cms-img.imgix.net/Alas%20Pilipinas%2019th%20place%20FIVB%20Worlds%202025.jpg" target="_blank">Inquirer Sports</a>
+    </li>
+    <li><strong>Favorite Teams (Brazil)</strong> — Brazil men’s volleyball team, 
+      <a href="https://sports.inquirer.net/files/2025/09/brazil-fivb-world.jpeg" target="_blank">Inquirer Sports</a>
+    </li>
+    <li><strong>Favorite Player Photo</strong> — Alezandra Faith G. Angpao, uploaded on 
+      <a href="https://i.imgur.com/44PF12K.png" target="_blank">Imgur</a>
+    </li>
+  </ul>
+</div>
+</html>
